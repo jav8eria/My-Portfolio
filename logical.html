@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        
+        h1{
+            background-color: burlywood;
+            text-align: center;
+            
+        }
+        input{
+            margin: 10px;
+            width: 50px;
+            height: 20px;
+
+        }
+        button{
+            /* margin-left: 310px; */
+            margin-top: 10px;
+        }
+    </style>
+
+    <script>
+        function check(){
+            var a = +(document.getElementById("n1")).value;
+            var b = +(document.getElementById("n2")).value;
+            var c = +(document.getElementById("n3")).value;
+            var d = +(document.getElementById("n4")).value;
+            var e = +(document.getElementById("n5")).value;
+
+
+            var total = (a+b+c+d+e);
+            var percentage = (total*100/500);
+
+
+            document.getElementById("data1").innerHTML="TOTAL MARKS =" +total;
+            document.getElementById("data2").innerHTML="PERSENTAGE=" +percentage+"%";
+
+        }
+    </script>
+    
+<!-- <script>
+
+    var name = 'Jaweria Waheed';
+    var gender = "FeMale";
+
+    if (gender == "Male"){
+    document.write("Hello mr." + name);
+    }else{
+    document.write("Hello Miss.       " + name);
+    }
+
+</script> -->
+
+</head>
+<body>
+ 
+   <h1 style="text-align: center;">CHECK YOUR RESULT STATUS</h1>
+   
+
+
+
+    ENGLISH: <input type="text" id="n1">
+    URDU: <input type="text" id="n2">
+    ACCOUNTING: <input type="text" id="n3">
+    GEOGRAPHY: <input type="text" id="n4">
+    BUSINESS MATH: <input type="text" id="n5">
+ <br>
+    <button type="button" onclick="check()">CHECK RESULT!</button>
+
+    <P id="data1"></P>
+    <p id="data2"></p>
+  
+</body>
+</html>

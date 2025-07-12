@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+
+    <script>
+        function Cube(){
+            var a=document.getElementById("Cube").value
+           
+            document.write("Cube Of   " + a + " = " + a * a * a);
+           
+            
+    
+           
+
+        }
+        
+
+       function add(){
+           var n1 = parseInt(document.getElementById("num1").value);
+           var n2 = parseInt(document.getElementById("num2").value);
+           var sum = n1+n2;
+
+
+           document.getElementById("demo").innerHTML=sum;
+       }
+
+       
+
+    </script>
+   
+</head>
+<body>
+    <h1>Program To Find Cube In JavaScript</h1>
+
+    <input type="text"name=""id="Cube">
+    <button type="button"onclick="Cube()">Find Cube</button>
+    <p id="ludu"></p>
+<br>
+    
+    
+    <script> 
+        document.write("<h1 style='color:purple'>WellCome My First Web Page</h1>");
+
+        function myvideo()
+        {open("https://www.youtube.com/shorts/jNgppRzIaMc?feature=share")
+        }
+        
+    </script>
+    <button type="button"onclick="myvideo()">Click Here</button>
+    <br>
+
+    <br>
+    <input type="text" placeholder="first number" id="num1">
+    <input type="text"placeholder="second number" id="num2">
+    <button type="button" onclick="add()">Addition</button>
+     <p id="demo"></p>
+</body>
+</html>
